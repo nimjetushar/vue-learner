@@ -2,7 +2,7 @@
   <div>
     <h3>{{ careCategoryName }} Json Config</h3>
     <Table
-      :data="gridData"
+      :value="gridData"
       :columns="gridColumns"
     />
   </div>
@@ -30,7 +30,7 @@ export default {
       tableData.push(tableMockData[key])
     }
     tableData = tableData.sort((a, b) => {
-      return (a > b) ? 1 : -1
+      return (a.order > b.order) ? 1 : -1
     })
 
     return {
@@ -41,7 +41,8 @@ export default {
         },
         {
           name: 'Order',
-          field: 'order'
+          field: 'order',
+          editable: false
         },
         {
           name: 'Primary',
