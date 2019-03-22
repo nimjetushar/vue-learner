@@ -1,5 +1,7 @@
 # vue-learner
 
+[![GitHub license](https://img.shields.io/github/license/nimjetushar/vue-learner.svg?style=popout)](https://github.com/nimjetushar/vue-learner/blob/master/LICENSE)
+
 ## Project setup
 ```
 npm install
